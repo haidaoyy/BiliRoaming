@@ -53,7 +53,5 @@ jobs:
     - name: Upload build artifact
       uses: actions/upload-artifact@v3
       with:
-        name: ${{ matrix.os }}-artifact
-        path: |
-          app/build/outputs
-          app/release
+          name: my-build-apk
+          path: ./**/*.apk
